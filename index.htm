@@ -16,7 +16,7 @@
                 text-align: center;
             }
             body{
-                background-color: rgb(160, 212, 245);
+                background-color: rgb(188, 217, 235);
             }
         </style>
         <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
@@ -53,7 +53,6 @@
                 if (e.keyCode == 32){
                     let width = document.body.clientWidth/2 -100
                     let height = document.body.clientHeight/2 + 100
-                    console.log(width, height)
                     let dot = document.getElementsByClassName("dot")[0]
                     dot.style.transform = `translate(${Math.random()*2*width-width}px, ${Math.random()*2*height-height}px)`
                     dot.style.backgroundColor = randomRgbColor()
